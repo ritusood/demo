@@ -3,4 +3,4 @@ namespace: c2ns
 domain: customer2.com
 app: app2
 host: emco.cluster3
-
+port: 31166

@@ -222,12 +222,12 @@ while getopts ":v:" flag
 do
     case "${flag}" in
         v) values=${OPTARG}
-           name=$(yq eval '.name' $values)
-           namespace=$(yq eval '.namespace' $values)
-           domain_name=$(yq eval '.domain' $values)
-           dedicated_gateway=$(yq eval '.dedicatedGateway' $values)
-           pop_location=$(yq eval '.pop' $values)
-           idp_server=$(yq eval '.idp' $values);;
+           name=$(./yq eval '.name' $values)
+           namespace=$(./yq eval '.namespace' $values)
+           domain_name=$(./yq eval '.domain' $values)
+           dedicated_gateway=$(./yq eval '.dedicatedGateway' $values)
+           pop_location=$(./yq eval '.pop' $values)
+           idp_server=$(./yq eval '.idp' $values);;
     esac
 done
 

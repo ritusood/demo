@@ -105,7 +105,7 @@ case "$1" in
         create_authz $name $namespace $app_name $index $url $role
     ;;
     "delete" )
-        delete_authz $name $app_name
+        delete_authz $name $namespace $app_name $index
     ;;
     *)
     usage ;;

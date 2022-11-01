@@ -2,5 +2,6 @@ name: customer1
 namespace: c1ns 
 domain: customer1.com
 app: app1
-host: httpbin.bar.cluster2
+host: app1.internalcustomer1.com
+port: 31166
 
