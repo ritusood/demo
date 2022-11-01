@@ -1,5 +1,5 @@
 {
-  "realm": "user",
+  "realm": "users",
   "enabled": true,
   "users": [
     {
@@ -16,7 +16,12 @@
       ],
       "realmRoles": [
         "user"
-      ]
+      ],
+      "clientRoles": {
+        "idp-client": [
+          "worker"
+        ]
+      }
     },
     {
       "username": "bob",
@@ -32,7 +37,12 @@
       ],
       "realmRoles": [
         "user"
-      ]
+      ],
+      "clientRoles": {
+        "idp-client": [
+          "worker"
+        ]
+      }
     },
     {
       "username": "andrew",
@@ -48,7 +58,12 @@
       ],
       "realmRoles": [
         "admin"
-      ]
+      ],
+      "clientRoles": {
+        "idp-client": [
+          "manager"
+        ]
+      }
     }
   ],
   "roles": {
