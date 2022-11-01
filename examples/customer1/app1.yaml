@@ -3,5 +3,5 @@ namespace: c1ns
 domain: customer1.com
 app: app1
 host: app1.internalcustomer1.com
-port: 31166
+port: 8000
 

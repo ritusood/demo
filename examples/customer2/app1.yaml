@@ -3,4 +3,4 @@ namespace: c2ns
 domain: customer2.com
 app: app1
 host: httpbin.bar.cluster2
-port: 31166
+port: 8000

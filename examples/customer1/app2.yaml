@@ -3,4 +3,4 @@ namespace: c1ns
 domain: customer1.com
 app: app2
 host: emco.cluster3
-port: 31166
+port: 8000

@@ -102,23 +102,11 @@
   ],
   "identityProviderMappers": [
     {
-      "name": "alice",
+      "name": "general",
       "identityProviderAlias": "KeycloakIDP",
       "identityProviderMapper": "oidc-advanced-role-idp-mapper",
       "config": {
-        "claims": "[{\"key\":\"given_name\",\"value\":\"alice\"}]",
-        "syncMode": "FORCE",
-        "are.claim.values.regex": "false",
-        "attributes": "[]",
-        "role": "oauth2-proxy.general"
-      }
-    },
-    {
-      "name": "bob",
-      "identityProviderAlias": "KeycloakIDP",
-      "identityProviderMapper": "oidc-advanced-role-idp-mapper",
-      "config": {
-        "claims": "[{\"key\":\"given_name\",\"value\":\"bob\"}]",
+        "claims": "[{\"key\":\"roles\",\"value\":\"worker\"}]",
         "syncMode": "FORCE",
         "are.claim.values.regex": "false",
         "attributes": "[]",
@@ -130,7 +118,7 @@
       "identityProviderAlias": "KeycloakIDP",
       "identityProviderMapper": "oidc-advanced-role-idp-mapper",
       "config": {
-        "claims": "[{\"key\":\"given_name\",\"value\":\"andrew\"}]",
+        "claims": "[{\"key\":\"roles\",\"value\":\"manager\"}]",
         "syncMode": "FORCE",
         "are.claim.values.regex": "false",
         "attributes": "[]",
